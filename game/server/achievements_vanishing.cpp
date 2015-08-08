@@ -30,10 +30,14 @@
 //       - 2. Use VTFEdit to convert it into .vtf format, using default parameters.
 //       - 3. Generate .vmt file using the parameter: Shader = Decal, Additive = true, Translucent = false.
 //       - 4. Save .vtf and .vmt to {path_to_your_mod}/materials/vgui/achievements/MOD_ACHIEVEMENT[.vmt/.vtf].
-// Step 4: Activate the Achievement
+// Step 4: Add Descriptions
+//       - Open {path_to_your_mod}/resource/gameui_{language}.txt, add the name and description of achievements into the "token" section.
+//       - * name: key = "MOD_ACHIEVEMENT_NAME", value = "name here"
+//       - * description: key = "MOD_ACHIEVEMENT_DESC", value = "description here"
+// Step 5: Activate the Achievement
 //       - Open hammer and insert a logic_achievement point entity naming "achiever", with AchievementName property set to "ACHIEVEMENT_EVENT_MOD_ACHIEVEMENT" (or equivalent selection value, based on custom FGD).
 //       - Add an output, setting its target to achiever's FireEvent() input.
-// Step 5: Run the Map and Enjoy
+// Step 6: Run the Map and Enjoy
 
 class CAchievementVanishingPressedTestButton : public CBaseAchievement
 {
