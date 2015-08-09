@@ -31,6 +31,9 @@
     <Filter Include="VPC Scripts">
       <UniqueIdentifier>{A40EE377-781A-C6B9-0C7C-B3BE118D248E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\HL2 DLL\vmod">
+      <UniqueIdentifier>{472b3ab5-1088-466a-a614-034c36e9dd00}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\..\lib\public\choreoobjects.lib">
@@ -3506,7 +3509,10 @@
       <Filter>Tools Framework</Filter>
     </ClCompile>
     <ClCompile Include="achievements_vanishing.cpp">
-      <Filter>Source Files\HL2 DLL</Filter>
+      <Filter>Source Files\HL2 DLL\vmod</Filter>
+    </ClCompile>
+    <ClCompile Include="env_targetindicator.cpp">
+      <Filter>Source Files\HL2 DLL\vmod</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

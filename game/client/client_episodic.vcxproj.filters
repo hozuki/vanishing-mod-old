@@ -46,6 +46,9 @@
     <Filter Include="VPC Scripts">
       <UniqueIdentifier>{A40EE377-781A-C6B9-0C7C-B3BE118D248E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\HL2 DLL\vmod">
+      <UniqueIdentifier>{653dd931-928c-495e-a127-9ead996d2793}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Library Include="..\..\lib\public\bitmap.lib">
@@ -3411,6 +3414,9 @@
     </ClCompile>
     <ClCompile Include="toolframework_client.cpp">
       <Filter>Tool Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\server\achievements_vanishing.cpp">
+      <Filter>Source Files\HL2 DLL\vmod</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

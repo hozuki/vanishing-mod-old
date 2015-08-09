@@ -336,6 +336,9 @@ CAI_Link*		FindPickerAILink( CBasePlayer* pPlayer );
 float			GetFloorZ(const Vector &origin);
 void			UpdateAllClientData( void );
 void			DrawMessageEntities();
+// 2015-08-08 MIC
+// A hack to display our env_targetindicator entities
+void            DrawTargetIndicatorEntities();
 
 #include "ai_network.h"
 
@@ -555,6 +558,9 @@ void DrawAllDebugOverlays( void )
 
 	// A hack to draw point_message entities w/o developer required
 	DrawMessageEntities();
+	// 2015-08-08 MIC
+	// A hack to display our env_targetindicator entities
+	DrawTargetIndicatorEntities();
 }
 
 CServerGameDLL g_ServerGameDLL;
